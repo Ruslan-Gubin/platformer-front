@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platformer</title>
+  <style>
+    body {}
+
+    canvas {
+      position: absolute;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #camera {
+      max-width: 1024px;
+      width: 1024px;
+      height: 768px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #root {
+      position: absolute;
+      transition: left 0.2s linear;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="camera">
+    <div id="root"></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
